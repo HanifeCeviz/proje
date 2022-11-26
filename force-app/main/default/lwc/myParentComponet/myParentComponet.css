@@ -1,0 +1,23 @@
+h1{
+    color:purple;
+    background-color: antiquewhite;
+}
+p{
+color: blue;
+background-color: gold;
+
+
+}
+
+c-my-child-componet{
+    color:green ;
+
+}
+/* We are able to override the child default css values using
+custom hooks.
+This css will apply and modify specific child elements*/
+:host{
+
+    --custom-color:red;
+    --custom-bg-color:yellow;
+}

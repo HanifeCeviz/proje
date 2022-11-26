@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Setter">
+        <lightning-input type="text" label="Enter New Age" onchange={updateAge}></lightning-input>
+        <h1>Name : {name}</h1>
+        <h1>Age : {age}</h1>
+        <h1>Update Age : {age1}</h1>
+        <lightning-button label="Update Age" onclick={updateOriginalAge}></lightning-button>
+    </lightning-card>
+    <lightning-card title=" Calling Setter Child ">
+        <c-setter-child1 customer-age="15"></c-setter-child1>
+
+
+    </lightning-card>
+</template>

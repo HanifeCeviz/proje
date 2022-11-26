@@ -1,0 +1,33 @@
+<template>
+
+  <lightning-card title="Data Binding">
+
+<h1>My name is {myName}</h1>
+
+  </lightning-card>
+
+<lightning-card title="On Input Handler">
+
+<input type='text' oninput={handleInput}/> 
+
+<h1> Hello {dynamicBinding} </h1>
+
+</lightning-card>
+  
+<lightning-card title="On Change Handler">
+
+<div class="slds-p-around_medium lgc-bg">
+  <!--create an input -->
+  <lightning-input>
+  type="text" 
+  label="Enter some text" 
+  onchange={handleInputChange}>
+</lightning-input>
+</div>
+<br>
+<!--bind the country property -->
+<h1> I am from {country} </h1>
+
+
+</lightning-card>
+</template>

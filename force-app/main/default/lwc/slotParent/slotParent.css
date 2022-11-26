@@ -1,0 +1,16 @@
+h1{
+    color: crimson;
+}
+c-slot-child p{
+     color: rgb(56, 9, 150);
+     background-color: blanchedalmond;
+     border: 2px solid green;
+     width: 50%;
+     
+}
+.my-h2-style{
+
+    color: darkorange;
+    background-color: deepskyblue;
+    border: 2px solid green;
+}

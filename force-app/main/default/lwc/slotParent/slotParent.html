@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Calling Slot Child">
+        <h1>1. Parent Header</h1>
+        <div>**************</div>
+        <!-- calling slot child element -->
+        <c-slot-child>
+            <h1>5. Slot child header</h1>
+            <p>6. Slot child paragraph</p>
+            <h2  class="my-h2-style" slot="header2">7. Slot Child header 2</h2>
+        </c-slot-child>
+        <div>**************</div>
+        <p>2. Parent paragragh</p>
+    </lightning-card>
+    <lightning-card title="Calling Named Child Component">
+        <c-slot-named-child>
+        <span slot="Father">John</span>
+        <span slot="Mother">Nancy</span>
+        <span slot="son">Tim</span>
+
+        </c-slot-named-child>
+    </lightning-card>
+
+     <lightning-card>
+
+        <lightning-input type="text" label="Country" onchange={handleCountryChange}></lightning-input>
+        <lightning-input type="text" label="City" onchange={handleCityChange}></lightning-input>
+        <lightning-input type="text" label="Famous For" onchange={handleFamousChange}></lightning-input>
+        <h1>COUNTRY: {country}</h1>
+        <h1>CITY: {city}</h1>
+        <h1>FAMOUS FOR: {famous}</h1>
+
+        <c-slot-named-details>
+         <span slot="country">Country:<a><b>{country}</b></a></span>
+        <span slot="city">City: <b>{city}</b></span>
+        <span slot="famous for">Famous For:{famous}</span>
+        </c-slot-named-details>
+
+
+     </lightning-card>
+
+
+
+</template>

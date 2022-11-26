@@ -1,0 +1,9 @@
+h1{
+    color: blueviolet;
+}
+h2{
+/* creating a reusable for color */
+color:var(--custom-color,green);
+    /* creating a reusable for background color */
+    background-color:var(--custom-bg-color,wheat);
+}

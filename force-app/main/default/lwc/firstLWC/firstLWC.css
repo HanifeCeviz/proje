@@ -1,0 +1,17 @@
+h2{
+    color:blue;
+    background-color:gold;
+}
+/*we are using h2 tag to style only he elements*/
+.my-style{
+    color: blueviolet;
+}
+/*In html apply this style to only my-style classes*/
+/*Most common way is to create class and use them for css*/
+p{
+    color: blueviolet;
+    background-color: gold;
+}
+.my-style{
+    color:green;
+}
